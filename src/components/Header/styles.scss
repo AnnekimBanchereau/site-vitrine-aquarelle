@@ -1,0 +1,29 @@
+@use 'src/styles/vars';
+
+.header{
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: vars.$gutter;
+  border-bottom: solid 1px #BCBCBC;
+
+  .logo{
+    font-family: vars.$logo-font;
+    font-size: 2em;
+  }
+
+  .navbar{
+    display: flex;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+    li{
+      margin-right: 3rem;
+      &:hover, .navbar_link-active{
+        font-weight: normal;
+      }
+    }
+  }
+
+}
