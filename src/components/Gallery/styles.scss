@@ -1,0 +1,51 @@
+.container_picture{
+  columns: 4;
+  break-inside: avoid;
+  margin: 2rem 0;
+
+  .picture_li{
+    max-width: 100%;
+    margin: 2rem;;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+
+    .picture{
+      max-width: 100%;
+      cursor:pointer;
+      transition: 0.3s all ease-in-out; 
+
+      &:hover{
+        opacity: 0.7;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1800px) { 
+  .container_picture{
+      columns: 3;
+
+      .picture_li{
+          margin: 1.5rem;
+      }
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1024px) { 
+  .container_picture{
+      columns: 2;
+
+      .picture_li{
+          margin: 1rem;
+      }
+  }
+
+}
+
+@media all and (max-width: 800px) { 
+  .container_picture{
+      columns: 1;
+  }
+}

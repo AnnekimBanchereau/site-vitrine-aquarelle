@@ -157,7 +157,7 @@ export default [
   },
   {
     title: 'Profil Chanel',
-    path: 'probil-chanel',
+    path: 'profil-chanel',
     alt: 'femme chanel de profil',
     theme: 'humain',
   },
@@ -172,12 +172,6 @@ export default [
     path: 'renard-silencieux',
     alt: 'tête de renard aux yeux perçants',
     theme: 'animal',
-  },
-  {
-    title: 'Rires',
-    path: 'rires',
-    alt: 'deux femmes qui rient',
-    theme: 'marin',
   },
   {
     title: 'Rires',
