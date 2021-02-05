@@ -10,6 +10,7 @@ import './styles.scss';
 import Header from 'src/components/Header';
 import Gallery from 'src/components/Gallery';
 import About from 'src/components/About';
+import Footer from 'src/components/Footer';
 
 const App = () => {
   const totalImg = imagesData.length;
@@ -24,6 +25,7 @@ const App = () => {
           <About />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 };
