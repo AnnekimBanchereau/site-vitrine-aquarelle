@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Switch,
   Route,
@@ -13,10 +13,11 @@ import About from 'src/components/About';
 import Footer from 'src/components/Footer';
 
 const App = () => {
-  const totalImg = imagesData.length;
+  const [openBurgerNav, setOpenBurgerNav] = useState(false);
+
   return (
     <div className="app">
-      <Header />
+      <Header burgernav={openBurgerNav} />
       <Switch>
         <Route path="/" exact>
           <Gallery images={imagesData} />

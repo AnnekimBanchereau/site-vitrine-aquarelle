@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 import './styles.scss';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toogleBurgerNav = () => {console.log("open")};
+  const toogleBurgerNav = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="header">
-      <div className="logo logo_scroll"><a href="">Agathe Chateauminois</a></div>
-      {/* <nav>
-        <ul className="navbar navbar_scroll">
+      <div className="logo"><a href="">Agathe Chateauminois</a></div>
+      <nav className="navbar">
+        <ul>
           <li>
             <NavLink
               to="/"
@@ -21,20 +24,28 @@ const Header = () => {
           </li>
           <li><NavLink to="/apropos" activeClassName="navbar_link-active">A propos</NavLink></li>
         </ul>
-      </nav> */}
-      <div className="navburger_block">
-        <span className="navburger_block-title">Menu</span>
-        <ul className="navburger_block-icon" onClick={toogleBurgerNav()}>
+      </nav>
+      <div className="navburger_block" onClick={toogleBurgerNav}>
+        <span className={classNames('navburger_block-title', { 'navburger_block-title-none': isOpen })}>Menu</span>
+        <ul className={classNames({ 'navburger_block-icon': !isOpen }, { 'navburger_block-icon-cross': isOpen })}>
           <span />
           <span />
         </ul>
       </div>
-      {/* <nav className="navburger">
+      <nav className={classNames('navburger', { 'navburger-active': isOpen })}>
         <ul className="navburger_link">
-          <li>Galerie</li>
-          <li>A propos</li>
+          <li>
+            <NavLink to="/" activeClassName="navburger_link-active" exact onClick={toogleBurgerNav}>
+              Galerie
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/apropos" activeClassName="navburger_link-active" onClick={toogleBurgerNav}>
+              A propos
+            </NavLink>
+          </li>
         </ul>
-      </nav> */}
+      </nav>
     </header>
   );
 };

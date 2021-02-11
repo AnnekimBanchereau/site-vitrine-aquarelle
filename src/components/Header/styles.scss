@@ -1,5 +1,14 @@
 @use 'src/styles/vars';
 
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform:translateX(0%)
+  }
+}
+
 .header{
   font-weight: 300;
   display: flex;
@@ -14,22 +23,24 @@
   }
 
   .navbar{
-    display: flex;
-    font-size: 1.2em;
-    text-transform: uppercase;
-
-    li{
-      margin-right: 3rem;
-      &:hover, .navbar_link-active{
-        font-weight: normal;
+    ul{
+      display: flex;
+      font-size: 1.2em;
+      text-transform: uppercase;
+  
+      li{
+        margin-right: 3rem;
+        &:hover, .navbar_link-active{
+          font-weight: normal;
+        }
       }
     }
   }
 }
 
 .navburger{
+  display:none;
   position: fixed;
-  display:flex;
   justify-content: center;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -40,22 +51,38 @@
   width:100vw;
   height: 100vh;
   padding:2rem;
+  // transform: translateX(100%);
+  // transition: transform 1s ease-in-out;
+  animation: slide 1s ease;
   ul {
     position:absolute;
     li {
       margin-top:5rem;
+      &:hover, .navburger_link-active{
+        font-weight: normal;
+      }
     }
+  }
+
+  &-active{
+    display:flex;
   }
 
 }
 
 .navburger_block{
+  display:none;
+  z-index: 1;
   &-title{
     font-weight: 300;
     text-transform: uppercase;
     display: inline-block;
     width: 100%;
     text-align: center;
+  }
+
+  &-title-none{
+    display:none;
   }
 
   &-icon{
@@ -104,29 +131,62 @@
         transform: translateY(0) rotate(-225deg);
       }
     }
+
+    &-cross{
+      justify-content: space-between;
+      width: 50px;
+      height: 30px;
+      position:relative;
+      margin-top:1rem;
+
+      &:hover{
+        cursor: pointer;
+        :nth-child(1){
+          transform: rotate(225deg);
+        }
+        :nth-child(2){
+          transform: rotate(315deg);
+        }
+      }
+
+      span{
+        position:absolute;
+        display:block;
+        background-color:#545454;
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+        transition: transform 1s ease;
+      }
+      :nth-child(1){
+        transform: translateY(0) rotate(45deg);
+      }
+      :nth-child(2){
+        transform: translateY(0) rotate(-225deg);
+      }
+    }
   }
 }
 
 
 
+@media all and (min-width: 800px) and (max-width: 1024px) { 
+  .navbar{
+      display: none;
+  }
 
-
-// .navburger:hover{
-//   cursor: pointer;
-//   opacity: 0.6;
-// }
-/* .navburger :nth-child(1):hover{
-  transform: rotate(180deg);
+  .navburger_block{
+      display: block!important;;
+  }
 }
 
-.navburger :nth-child(2):hover{
-  transform: rotate(-180deg);
-} */
+@media all and (max-width: 800px) { 
 
-/* .navburger :nth-child(1):hover{
-  transform: translateY(15px) rotate(45deg);
+  .navbar{
+      display: none;
+  }
+
+  .navburger_block {
+      display: block!important;;
+  }
 }
-
-.navburger :nth-child(2):hover{
-  transform: translateY(15px) rotate(-225deg);
-} */
