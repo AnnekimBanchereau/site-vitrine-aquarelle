@@ -3,7 +3,15 @@
 
 // Generic
 $dark-color: #101010;
+$dark-color-transparent: rgba(16, 16, 16,0.9);
 $light-color: #fff;
+$light-beige:rgba(252,249,245,0.9);
+$queen-blue: #456990;
+$pink-penny: rgba(186, 110, 110, 0.8);
+$dim-gray: #686868;
+$blue-sapphire:#2d5d7b;
+$raisin-black: #272932;
+$prussian-blue:#253d5b;
 $gutter: 2rem;
 
 // Global
@@ -14,7 +22,3 @@ $global-font-color: #545454;
 $logo-font: 'Dancing Script', cursive;
 $title-font-weight: 500;
 $title-color: #000;
-
-// Post
-$post-text-color: #666;
-$post-hover-color: #f7f7f7;

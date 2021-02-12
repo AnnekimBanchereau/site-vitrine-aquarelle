@@ -1,5 +1,5 @@
-@use 'src/styles/vars';
+@import 'src/styles/vars';
 
 .app {
-  padding: vars.$gutter 2*vars.$gutter;
+  padding: $gutter 2*$gutter;
 }

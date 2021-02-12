@@ -158,7 +158,7 @@ export default [
   {
     title: 'Profil Chanel',
     path: 'profil-chanel',
-    alt: 'femme chanel de profil',
+    alt: 'femme Chanel de profil',
     theme: 'humain',
   },
   {

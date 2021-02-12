@@ -1,3 +1,5 @@
+@import 'src/styles/vars';
+
 .nav_footer{
   display:flex;
   justify-content: space-around;
@@ -14,7 +16,7 @@
 
       &:hover{
         font-weight:700;
-        box-shadow: 0px 0px 0px 2px #545454;
+        box-shadow: 0px 0px 0px 2px $dim-gray;
       }
   }
    
