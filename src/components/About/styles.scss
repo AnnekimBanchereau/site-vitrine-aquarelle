@@ -1,0 +1,86 @@
+@import 'src/styles/vars';
+
+.about_container{
+  margin-top: 5rem;
+  .about{
+    padding: $gutter;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: 1rem auto;
+  
+    .about_picture{
+      img{
+        max-width: 100%;
+        width: 350px;
+      }
+    }
+  
+    .about_content{
+      h2{
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+      }
+      line-height: 2em;
+      width: 50%;
+      padding:2rem;
+      text-align: center;
+      &-signature{
+        font-style: italic;
+      }
+    }
+  }
+
+  .contacts{
+    margin:auto;
+    margin-bottom: 2*$gutter;
+    width: 50%;
+    text-align: center;
+    background-color: $pewter-blue-light;
+    padding:$gutter 0 1rem;
+    ul li{
+      margin-bottom: $gutter;
+      .contacts_icon{
+        margin-right: 1rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+
+@media all and (min-width: 1100px) and (max-width: 1300px) { 
+  .about_container{
+    .about{
+      width: 90%;
+      .about_picture{
+        img{
+          width: 300px;
+        }
+      }
+      // .about_content{
+      //   width: 100%;
+      // }
+    }
+  }
+}
+
+@media all and (max-width: 1100px) { 
+  .about_container{
+    .about{
+      width: 100%;
+      .about_picture{
+        img{
+          width: 300px;
+        }
+      }
+      .about_content{
+        width: 100%;
+      }
+    }
+    .contacts{
+      width: 100%;
+    }
+  }
+}

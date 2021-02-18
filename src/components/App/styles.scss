@@ -1,5 +1,8 @@
 @import 'src/styles/vars';
 
 .app {
-  padding: $gutter 2*$gutter;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

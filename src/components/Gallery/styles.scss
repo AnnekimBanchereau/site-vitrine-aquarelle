@@ -8,15 +8,16 @@
 .gallery{
   position:relative;
   margin: $gutter 0;
+  padding:$gutter 4*$gutter;
 
   .container_picture{
-    columns: 4;
+    columns: 3;
     break-inside: avoid;
     margin: 2*$gutter 0;
 
     .picture_li{
       max-width: 100%;
-      margin: 2rem;;
+      margin: 4rem;;
       height: auto;
       display: inline-block;
       overflow: hidden;
@@ -36,8 +37,6 @@
   }
 }
 
-
-/* The Modal (background) */
 .modal {
   display: flex;
   align-items: center;
@@ -68,7 +67,7 @@
 
   &-content, &-title {
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 1s;
   }
 
   &-close {
@@ -88,10 +87,6 @@
     }
   }
 }
-
-
-
-
 
 @media all and (min-width: 1024px) and (max-width: 1800px) { 
   .container_picture{

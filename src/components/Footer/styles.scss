@@ -1,23 +1,54 @@
 @import 'src/styles/vars';
 
-.nav_footer{
-  display:flex;
-  justify-content: space-around;
-  padding-top: 1rem;
-  align-items: baseline;
-  font-weight: 100;
-
-  & .icone-insta{
-    display:inline-block;
-    padding:0.6rem;
-    border-radius: 50px;
-    cursor:pointer;
-    transition: all .4s;
-
-      &:hover{
-        font-weight:700;
-        box-shadow: 0px 0px 0px 2px $dim-gray;
-      }
+.footer{
+  background-color: $light-beige;
+  padding: $gutter;
+  font-size: 0.8em;
+  .nav_footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    li{
+      text-align: center;
+      margin-right: 1rem;
+    }
+    & .icone-insta{
+      display:inline-block;
+      padding:0.6rem;
+      border-radius: 50px;
+      vertical-align: middle;
+      cursor:pointer;
+      transition: all .4s;
+  
+        &:hover{
+          font-weight:700;
+          box-shadow: 0px 0px 0px 2px $dim-gray;
+        }
+    }
   }
-   
+
 }
+
+// @media all and (min-width: 800px) and (max-width: 1024px) { 
+//   .gallery{
+//     .container_picture{
+//         columns: 2;
+  
+//         .picture_li{
+//             margin: 1rem;
+//             :hover{
+//               transform: scale(0.9);
+//             }
+//         }
+//     }
+//   }
+// }
+
+// @media all and (max-width: 800px) { 
+//   .gallery{
+//     .container_picture{
+//         columns: 1;
+//     }
+//   }
+// }

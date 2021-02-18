@@ -3,7 +3,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import './styles.scss';
 
 const Footer = () => (
-  <footer>
+  <footer className="footer">
     <ul className="nav_footer">
       <li>© {new Date().getFullYear()}</li>
       <li>Mentions Légales</li>
