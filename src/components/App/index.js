@@ -11,6 +11,7 @@ import Header from 'src/components/Header';
 import Gallery from 'src/components/Gallery';
 import About from 'src/components/About';
 import Footer from 'src/components/Footer';
+import Notices from 'src/components/Notices';
 
 const App = () => {
   const [openBurgerNav, setOpenBurgerNav] = useState(false);
@@ -24,6 +25,9 @@ const App = () => {
         </Route>
         <Route path="/apropos" exact>
           <About />
+        </Route>
+        <Route path="/mentionslegales" exact>
+          <Notices />
         </Route>
       </Switch>
       <Footer />

@@ -1,0 +1,36 @@
+@import 'src/styles/vars';
+
+.notices{
+  margin: 4*$gutter 2*$gutter $gutter;
+  text-align: justify;
+  span, a{
+    font-weight: bold;
+  }
+
+  h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p{
+    font-size: 1em;
+    margin-bottom: 1rem;
+    line-height: 1.2em;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+    li{
+      font-size: 1em;
+      margin-bottom: 1rem;
+    }
+  }
+}

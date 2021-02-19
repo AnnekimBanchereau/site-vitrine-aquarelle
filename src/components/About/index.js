@@ -25,9 +25,10 @@ const About = () => (
           <a href="tel:+33643259862">+33 6 43 25 98 62</a>
         </li>
         <li>
+          <AiOutlineInstagram className="contacts_icon" size="1.5em" title="instagram" />
           <a href="https://instagram.com/castelface">
-            <AiOutlineInstagram className="contacts_icon" size="1.5em" title="instagram" />
-          </a> @agathe.chateauminois
+            @agathe.chateauminois
+          </a>
         </li>
       </ul>
     </div>

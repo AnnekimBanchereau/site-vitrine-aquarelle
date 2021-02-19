@@ -115,6 +115,7 @@
 
 @media all and (max-width: 800px) { 
   .gallery{
+    padding: $gutter 1rem;
     .container_picture{
         columns: 1;
     }

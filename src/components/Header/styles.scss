@@ -87,6 +87,7 @@
 .navburger_block{
   display:none;
   z-index: 1;
+  margin-top: 0.5rem;
   &-title{
     font-weight: 300;
     text-transform: uppercase;
@@ -168,7 +169,7 @@
       span{
         position:absolute;
         display:block;
-        background-color:$light-color;
+        background-color:$dim-gray;
         height: 3px;
         width: 100%;
         border-radius: 2px;
@@ -203,6 +204,6 @@
   }
 
   .navburger_block {
-      display: block!important;;
+      display: block!important;
   }
 }
