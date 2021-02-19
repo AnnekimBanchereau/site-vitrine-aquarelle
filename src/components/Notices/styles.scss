@@ -10,14 +10,14 @@
   h1{
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: $gutter;
   }
 
   h2{
     font-size: 1.2em;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
   }
 
   p{
@@ -27,7 +27,7 @@
   }
 
   ul {
-    margin-bottom: 2rem;
+    margin-bottom: $gutter;
     li{
       font-size: 1em;
       margin-bottom: 1rem;

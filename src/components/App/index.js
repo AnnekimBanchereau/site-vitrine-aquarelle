@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Switch,
   Route,
@@ -13,27 +13,22 @@ import About from 'src/components/About';
 import Footer from 'src/components/Footer';
 import Notices from 'src/components/Notices';
 
-const App = () => {
-  const [openBurgerNav, setOpenBurgerNav] = useState(false);
+const App = () => (
+  <div className="app">
+    <Header />
+    <Switch>
+      <Route path="/" exact>
+        <Gallery images={imagesData} />
+      </Route>
+      <Route path="/apropos" exact>
+        <About />
+      </Route>
+      <Route path="/mentionslegales" exact>
+        <Notices />
+      </Route>
+    </Switch>
+    <Footer />
+  </div>
+);
 
-  return (
-    <div className="app">
-      <Header burgernav={openBurgerNav} />
-      <Switch>
-        <Route path="/" exact>
-          <Gallery images={imagesData} />
-        </Route>
-        <Route path="/apropos" exact>
-          <About />
-        </Route>
-        <Route path="/mentionslegales" exact>
-          <Notices />
-        </Route>
-      </Switch>
-      <Footer />
-    </div>
-  );
-};
-
-// == Export
 export default App;

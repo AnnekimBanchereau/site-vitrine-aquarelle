@@ -14,7 +14,7 @@ const Footer = () => (
       </li>
       <li> <a href="mailto:agathe.chateauminois@gmail.com">agathe.chateauminois@gmail.com</a></li>
       <li>
-        <a href="https://instagram.com/castelface" className="icone-insta">
+        <a href="https://instagram.com/agathe.chateauminois" className="icone-insta">
           <AiOutlineInstagram className="icone-insta-svg" size="1.5em" title="instagram" />
         </a>
       </li>
