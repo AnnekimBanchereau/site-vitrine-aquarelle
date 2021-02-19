@@ -12,6 +12,7 @@ import Gallery from 'src/components/Gallery';
 import About from 'src/components/About';
 import Footer from 'src/components/Footer';
 import Notices from 'src/components/Notices';
+import NotFound from 'src/components/NotFound';
 
 const App = () => (
   <div className="app">
@@ -25,6 +26,9 @@ const App = () => (
       </Route>
       <Route path="/mentionslegales" exact>
         <Notices />
+      </Route>
+      <Route>
+        <NotFound />
       </Route>
     </Switch>
     <Footer />
