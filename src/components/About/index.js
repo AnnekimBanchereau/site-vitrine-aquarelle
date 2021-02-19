@@ -26,7 +26,7 @@ const About = () => (
         </li>
         <li>
           <AiOutlineInstagram className="contacts_icon" size="1.5em" title="instagram" />
-          <a href="https://instagram.com/castelface">
+          <a href="https://instagram.com/agathe.chateauminois">
             @agathe.chateauminois
           </a>
         </li>
