@@ -10,15 +10,16 @@ React
 
 ## Fonctionalités
 
-### Première version en cours
+### Première version en ligne
 
-* Une page Galerie qui expose l'ensemble des aquarelles
-* Une ou deux page(s) à propos / contact
-* Apparition des peintures au scroll
+* Une page "Galerie" qui expose l'ensemble des aquarelles
+* Une page "à propos"
 * Zoom sur une peinture au click
 * Lien vers Instagram
 * Site responsive
 
-### Deuxième version
+### Fonctionalités à venir
 
+* SEO
+* Optimisation performance chargement images
 * Interface admin pour charger en autonomie les photos
