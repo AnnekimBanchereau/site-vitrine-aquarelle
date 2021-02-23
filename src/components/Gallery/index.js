@@ -18,8 +18,13 @@ const Gallery = ({ images }) => {
     setOpenModal(!openModal);
   };
 
-  const closeModal = () => {
+  const closeModal = (event) => {
+    event.stopPropagation();
     setOpenModal(false);
+  };
+
+  const handleChildClick = (e) => {
+    e.stopPropagation();
   };
 
   return (
@@ -31,7 +36,8 @@ const Gallery = ({ images }) => {
           )))
         }
       </ul>
-      {openModal && <Modal {...attributesImg} onClick={closeModal} />}
+      {openModal
+      && <Modal {...attributesImg} onClick={closeModal} onClickImage={handleChildClick} />}
     </main>
   );
 };
