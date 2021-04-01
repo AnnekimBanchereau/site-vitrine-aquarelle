@@ -1,7 +1,7 @@
 # Site vitrine d'exposition de peintures aquarelle
 
 <p>Réalisation d'un site web pour une amie afin de lui permettre de mettre en valeur ses peintures.</p>
-<p>https://agathe-chateauminois.netlify.app</p>
+<p>https://https://www.agathe.chateauminois.com</p>
 
 <img src="./site_web.PNG" alt="site_web" width="500"/>
 
