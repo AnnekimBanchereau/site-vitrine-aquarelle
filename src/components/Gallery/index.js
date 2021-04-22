@@ -13,6 +13,7 @@ const Gallery = ({ images }) => {
     const attributes = {
       src: event.target.src,
       title: capitalizeFirstLetter(event.target.dataset.title),
+      alt: event.target.alt,
     };
     setAttributesImg(attributes);
     setOpenModal(!openModal);
