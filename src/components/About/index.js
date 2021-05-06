@@ -5,13 +5,13 @@ import './styles.scss';
 const About = () => (
   <main className="about_container">
     <section className="about">
-      <div className="about_picture">
-        <img src="img/agathe.jpg" alt="portrait noir et blanc Agathe Chateauminois" />
-      </div>
       <div className="about_content">
         <h2>A propos de moi ...</h2>
         <p className="about_content-text">Depuis l’été 2019, je m’essaye à l’aquarelle. Des paysages bretons aux animaux sauvages, en passant par des estampes japonaises, je teste différentes formes en construisant progressivement mon univers. Ingénieure en Sciences de l’eau de formation et reconvertie en institutrice, la peinture m’a portée pendant cette transition et continue de m’apporter une grande satisfaction. Elle permet des moments de déconnexion avec l’extérieur. En vous souhaitant une bonne déambulation sur ce site ! </p>
         <p className="about_content-signature">Agathe Chateauminois</p>
+      </div>
+      <div className="about_picture">
+        <img src="img/agathe.jpg" alt="portrait noir et blanc Agathe Chateauminois" />
       </div>
     </section>
     <div className="contacts">
