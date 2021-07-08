@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <div className="logo"><a href="">Agathe Chateauminois</a></div>
+      <div className="logo"><a href="/">Agathe Chateauminois</a></div>
       <nav className="navbar">
         <ul>
           <li>

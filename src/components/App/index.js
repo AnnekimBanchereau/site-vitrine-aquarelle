@@ -6,9 +6,12 @@ import {
 } from 'react-router-dom';
 
 import imagesData from 'src/data/img';
+import foldersData from 'src/data/folder';
+
 import './styles.scss';
 
 import Header from 'src/components/Header';
+import Home from 'src/components/Home';
 import Gallery from 'src/components/Gallery';
 import About from 'src/components/About';
 import Footer from 'src/components/Footer';
@@ -21,6 +24,10 @@ const App = () => (
     <Header />
     <Switch>
       <Route path="/" exact>
+        <ScrollToTop />
+        <Home images={imagesData} folders={foldersData} />
+      </Route>
+      <Route path="/gallery/:id" exact>
         <ScrollToTop />
         <Gallery images={imagesData} />
       </Route>

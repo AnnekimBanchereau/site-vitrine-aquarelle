@@ -11,12 +11,13 @@
   padding:$gutter 4*$gutter;
 
   .container_picture{
-    columns: 3;
-    break-inside: avoid;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
     margin: 2*$gutter 0 0 0;
 
     .picture_li{
-      max-width: 100%;
+      width: 20%;
       margin: 2*$gutter;
       height: auto;
       display: inline-block;

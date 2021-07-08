@@ -13,6 +13,11 @@
       text-align: center;
       margin-right: 1rem;
     }
+    &_link{
+      &:hover{
+        font-weight:700;
+      }
+    }
     & .icone-insta{
       display:inline-block;
       padding:0.6rem;

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { capitalizeFirstLetter } from 'src/utils';
+import { useParams } from 'react-router-dom';
 import Modal from './Modal';
 import Image from './Image';
 import './styles.scss';
 
 const Gallery = ({ images }) => {
+  const { id } = useParams();
+
   const [attributesImg, setAttributesImg] = useState({});
   const [openModal, setOpenModal] = useState(false);
 
@@ -32,9 +35,9 @@ const Gallery = ({ images }) => {
     <main className="gallery">
       <ul className="container_picture">
         {
-          images.map(((image) => (
+          images.filter((image) => (image.id_folder === parseInt(id, 10))).map((image) => (
             <Image image={image} key={image.path} onClick={handleModal} />
-          )))
+          ))
         }
       </ul>
       {openModal
